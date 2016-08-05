@@ -1,12 +1,6 @@
-#include <stdio.h>
-#include <opencv2/opencv.hpp>
-#include "hsvrange.hpp"
-using namespace cv;
+#include "main.hpp"
 
 //const double hRange[] = {75, 95}, sRange[] = {180, 255}, vRange[] = {60, 170};
-Mat hsvFilter(Mat, Mat, Mat);
-Mat bitwiseOr(Mat, Mat);
-Mat findRetroreflectiveTape(Mat);
 
 HSVRange range1(75, 95, 180, 255, 60, 170);
 HSVRange range2(65, 155, 25, 125, 125, 215);
