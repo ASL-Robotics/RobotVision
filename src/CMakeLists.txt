@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8)
 project( RobotVision )
 find_package( OpenCV REQUIRED )
-add_executable( Main main.cpp )
+add_executable( Main main.cpp hsvrange.cpp)
 target_link_libraries( Main ${OpenCV_LIBS} )
