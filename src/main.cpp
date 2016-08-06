@@ -37,7 +37,11 @@ int main(int argc, char **argv) {
 }
 
 Mat findRetroreflectiveTape(Mat image) {
-  return bitwiseOr(hsvFilter(image, hsvlow1, hsvhigh1), hsvFilter(image, hsvlow2, hsvhigh2));
+  Mat eroded(image.size(), image.type(), Scalar(0,0,0,0));
+  Mat dilated(image.size(), image.type(), Scalar(0,0,0,0));
+  erode(bitwiseOr(hsvFilter(image, hsvlow1, hsvhigh1), hsvFilter(image, hsvlow2, hsvhigh2)), eroded, Mat());
+  dilate(eroded, dilated, Mat());
+  return dilated;
 }
 
 Mat hsvFilter(Mat input, Mat low, Mat high) {
