@@ -30,3 +30,6 @@
 
 # CMake build folders
 **/build
+
+# Visual Studio Code Files
+.browse.VC*
