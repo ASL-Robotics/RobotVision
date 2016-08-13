@@ -33,3 +33,4 @@
 
 # Visual Studio Code Files
 .browse.VC*
+.vscode/
