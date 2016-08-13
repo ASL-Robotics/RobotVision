@@ -30,3 +30,6 @@
 
 # CMake build folders
 **/build
+
+# Visual Studio temporary files
+.browse.VC*
