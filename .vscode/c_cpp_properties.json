@@ -2,7 +2,7 @@
     "configurations": [
         {
             "name": "Mac",
-            "includePath": ["/usr/include"],
+            "includePath": ["/usr/include", "/Library/Developer/CommandLineTools/usr/lib/c++/v1"],
             "browse" : {
                 "limitSymbolsToIncludedHeaders" : true,
                 "databaseFilename" : ""
