@@ -6,12 +6,12 @@
             "type": "cppdbg",
             "request": "launch",
             "targetArchitecture": "x64",
-            "program": "enter program name, for example ${workspaceRoot}/a.out",
-            "args": [],
+            "program": "${workspaceRoot}/RobotVision",
+            "args": ["sample-images/200.jpg"],
             "stopAtEntry": false,
             "cwd": "${workspaceRoot}",
             "environment": [],
-            "externalConsole": true,
+            "externalConsole": false,
             "linux": {
                 "MIMode": "gdb"
             },
