@@ -27,6 +27,7 @@
 *.exe
 *.out
 *.app
+*.class
 
 # CMake build folders
 **/build
